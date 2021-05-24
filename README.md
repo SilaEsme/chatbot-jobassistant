@@ -1,2 +1,1 @@
-# chatbot-jobassistant
-BDVO Final Project. This is chatbot that takes user's information and find a job for the user.
+# chatbot app for taking your informations and suggest proper jobs to you
