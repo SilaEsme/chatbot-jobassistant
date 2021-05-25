@@ -33,17 +33,17 @@ namespace JobAssistant
             this.panelDown = new System.Windows.Forms.Panel();
             this.pictureBoxSent = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panelDialog = new System.Windows.Forms.Panel();
+            this.userControlBubble1 = new JobAssistant.UserControlBubble();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox_exit = new System.Windows.Forms.PictureBox();
-            this.panelDialog = new System.Windows.Forms.Panel();
-            this.userControlBubble1 = new JobAssistant.UserControlBubble();
             this.panelDown.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSent)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panelDialog.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_exit)).BeginInit();
-            this.panelDialog.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBoxText
@@ -71,7 +71,7 @@ namespace JobAssistant
             this.pictureBoxSent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.pictureBoxSent.Image = global::JobAssistant.Properties.Resources.icons8_sent_64;
             this.pictureBoxSent.Location = new System.Drawing.Point(416, 7);
-            this.pictureBoxSent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBoxSent.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxSent.Name = "pictureBoxSent";
             this.pictureBoxSent.Size = new System.Drawing.Size(53, 31);
             this.pictureBoxSent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -84,47 +84,10 @@ namespace JobAssistant
             this.panel1.BackColor = System.Drawing.Color.CadetBlue;
             this.panel1.Controls.Add(this.panelDialog);
             this.panel1.Location = new System.Drawing.Point(520, 84);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(481, 475);
             this.panel1.TabIndex = 15;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(517, 54);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 18);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Job Assistant Bot";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::JobAssistant.Properties.Resources.image_processing20191115_17035_1dck5td;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 125);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(507, 400);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox_exit
-            // 
-            this.pictureBox_exit.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_exit.Image = global::JobAssistant.Properties.Resources.icons8_close_window_64;
-            this.pictureBox_exit.Location = new System.Drawing.Point(991, 11);
-            this.pictureBox_exit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox_exit.Name = "pictureBox_exit";
-            this.pictureBox_exit.Size = new System.Drawing.Size(40, 44);
-            this.pictureBox_exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox_exit.TabIndex = 13;
-            this.pictureBox_exit.TabStop = false;
-            this.pictureBox_exit.Click += new System.EventHandler(this.pictureBox_exit_Click);
             // 
             // panelDialog
             // 
@@ -149,6 +112,43 @@ namespace JobAssistant
             this.userControlBubble1.Size = new System.Drawing.Size(0, 5);
             this.userControlBubble1.TabIndex = 16;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(517, 54);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(209, 18);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Job Assistant Bot  -- say hi";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::JobAssistant.Properties.Resources.image_processing20191115_17035_1dck5td;
+            this.pictureBox1.Location = new System.Drawing.Point(9, 125);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(507, 400);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox_exit
+            // 
+            this.pictureBox_exit.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_exit.Image = global::JobAssistant.Properties.Resources.icons8_close_window_64;
+            this.pictureBox_exit.Location = new System.Drawing.Point(991, 11);
+            this.pictureBox_exit.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox_exit.Name = "pictureBox_exit";
+            this.pictureBox_exit.Size = new System.Drawing.Size(40, 44);
+            this.pictureBox_exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox_exit.TabIndex = 13;
+            this.pictureBox_exit.TabStop = false;
+            this.pictureBox_exit.Click += new System.EventHandler(this.pictureBox_exit_Click);
+            // 
             // AssistantBotForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -169,10 +169,10 @@ namespace JobAssistant
             this.panelDown.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSent)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_exit)).EndInit();
             this.panelDialog.ResumeLayout(false);
             this.panelDialog.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_exit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
