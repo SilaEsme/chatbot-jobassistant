@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding= "UTF-8"?>
+<aiml>
+
+<category>
+   <pattern>*</pattern>
+   <template>
+      <random>
+         <li>I'm sorry I don't understand</li>
+         <li>I beg your pardon?</li>
+         <li>Could you explain that in different words?</li>
+         <li>Huh?</li>
+         <li>You aren't making sense to me...</li>
+      </random>
+   </template>
+</category>
+
+<category>
+  <pattern>HELLO</pattern>
+  <template>Welcome! I am <bot name="name"/>. I ask questions to know you and suggest jobs for you! If you want to find a proper job for yourself, type "start".</template>
+</category>
+
+<category>
+   <pattern>HI</pattern>
+   <template><srai>HELLO</srai></template>
+</category>
+<category>
+   <pattern>HI *</pattern>
+   <template><srai>HELLO</srai></template>
+</category>
+<category>
+   <pattern>HELLO *</pattern>
+   <template><srai>HELLO</srai></template>
+</category>
+
+</aiml>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EmployeeInformations>
+  <employee username="1">
+    <skillList>
+      <schoolInfo />
+      <englishKnowledge />
+      <positionInfo />
+    </skillList>
+  </employee>
+  <employee username="2">
+    <skillList>
+      <schoolInfo />
+      <englishKnowledge />
+      <positionInfo />
+    </skillList>
+  </employee>
+  <employee username="1">
+    <skillList>
+      <schoolInfo>esogu</schoolInfo>
+      <englishKnowledge>b1</englishKnowledge>
+      <positionInfo>software</positionInfo>
+    </skillList>
+  </employee>
+</EmployeeInformations>
