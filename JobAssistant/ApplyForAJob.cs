@@ -91,8 +91,8 @@ namespace JobAssistant
         }
 
         private void ApplyForAJob_Load(object sender, EventArgs e)
-        { 
-           
+        {
+            SetJobs();
         }
 
         private void panel_AD_2_MouseClick(object sender, MouseEventArgs e)
