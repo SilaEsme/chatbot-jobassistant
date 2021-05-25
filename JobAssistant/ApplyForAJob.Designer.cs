@@ -32,50 +32,50 @@ namespace JobAssistant
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ApplyForAJob));
             this.pictureBox_exit = new System.Windows.Forms.PictureBox();
             this.panel_AD_2 = new System.Windows.Forms.Panel();
+            this.label_L2 = new System.Windows.Forms.Label();
+            this.label_C2 = new System.Windows.Forms.Label();
+            this.label_Software = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel_Display_Jobs = new System.Windows.Forms.Panel();
             this.panel_AD_1 = new System.Windows.Forms.Panel();
-            this.panel_AD_4 = new System.Windows.Forms.Panel();
-            this.panel_AD_3 = new System.Windows.Forms.Panel();
-            this.panel_Display_Info = new System.Windows.Forms.Panel();
-            this.panel_Home = new System.Windows.Forms.Panel();
-            this.pictureBox_Back = new System.Windows.Forms.PictureBox();
-            this.label_Software = new System.Windows.Forms.Label();
-            this.label_C2 = new System.Windows.Forms.Label();
-            this.label_L2 = new System.Windows.Forms.Label();
-            this.label_L3 = new System.Windows.Forms.Label();
-            this.label_C3 = new System.Windows.Forms.Label();
-            this.label_Hardware = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel_AD_5 = new System.Windows.Forms.Panel();
             this.label_L1 = new System.Windows.Forms.Label();
             this.label_C1 = new System.Windows.Forms.Label();
             this.label_Networking = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.panel_AD_3 = new System.Windows.Forms.Panel();
+            this.label_L3 = new System.Windows.Forms.Label();
+            this.label_C3 = new System.Windows.Forms.Label();
+            this.label_Hardware = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel_AD_4 = new System.Windows.Forms.Panel();
             this.label_L4 = new System.Windows.Forms.Label();
             this.label_C4 = new System.Windows.Forms.Label();
             this.label_WebDevelopment = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.panel_AD_5 = new System.Windows.Forms.Panel();
             this.label_L5 = new System.Windows.Forms.Label();
             this.label_C5 = new System.Windows.Forms.Label();
             this.label_Security = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.panel_Display_Info = new System.Windows.Forms.Panel();
+            this.panel_Home = new System.Windows.Forms.Panel();
+            this.pictureBox_Back = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_exit)).BeginInit();
             this.panel_AD_2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel_Display_Jobs.SuspendLayout();
             this.panel_AD_1.SuspendLayout();
-            this.panel_AD_4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel_AD_3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel_AD_4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel_AD_5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel_Home.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Back)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel_AD_5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox_exit
@@ -101,6 +101,34 @@ namespace JobAssistant
             this.panel_AD_2.Name = "panel_AD_2";
             this.panel_AD_2.Size = new System.Drawing.Size(499, 172);
             this.panel_AD_2.TabIndex = 15;
+            this.panel_AD_2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.panel_AD_2_MouseClick);
+            // 
+            // label_L2
+            // 
+            this.label_L2.AutoSize = true;
+            this.label_L2.Location = new System.Drawing.Point(151, 125);
+            this.label_L2.Name = "label_L2";
+            this.label_L2.Size = new System.Drawing.Size(57, 17);
+            this.label_L2.TabIndex = 3;
+            this.label_L2.Text = "İstanbul";
+            // 
+            // label_C2
+            // 
+            this.label_C2.AutoSize = true;
+            this.label_C2.Location = new System.Drawing.Point(151, 86);
+            this.label_C2.Name = "label_C2";
+            this.label_C2.Size = new System.Drawing.Size(321, 17);
+            this.label_C2.TabIndex = 2;
+            this.label_C2.Text = "Eopy Endustrial Automation, Design and Software";
+            // 
+            // label_Software
+            // 
+            this.label_Software.AutoSize = true;
+            this.label_Software.Location = new System.Drawing.Point(151, 41);
+            this.label_Software.Name = "label_Software";
+            this.label_Software.Size = new System.Drawing.Size(128, 17);
+            this.label_Software.TabIndex = 1;
+            this.label_Software.Text = "Computer Software";
             // 
             // pictureBox1
             // 
@@ -136,151 +164,7 @@ namespace JobAssistant
             this.panel_AD_1.Name = "panel_AD_1";
             this.panel_AD_1.Size = new System.Drawing.Size(499, 172);
             this.panel_AD_1.TabIndex = 16;
-            // 
-            // panel_AD_4
-            // 
-            this.panel_AD_4.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel_AD_4.Controls.Add(this.label_L4);
-            this.panel_AD_4.Controls.Add(this.label_C4);
-            this.panel_AD_4.Controls.Add(this.label_WebDevelopment);
-            this.panel_AD_4.Controls.Add(this.pictureBox4);
-            this.panel_AD_4.Location = new System.Drawing.Point(25, 537);
-            this.panel_AD_4.Name = "panel_AD_4";
-            this.panel_AD_4.Size = new System.Drawing.Size(499, 172);
-            this.panel_AD_4.TabIndex = 16;
-            // 
-            // panel_AD_3
-            // 
-            this.panel_AD_3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel_AD_3.Controls.Add(this.label_L3);
-            this.panel_AD_3.Controls.Add(this.label_C3);
-            this.panel_AD_3.Controls.Add(this.label_Hardware);
-            this.panel_AD_3.Controls.Add(this.pictureBox2);
-            this.panel_AD_3.Location = new System.Drawing.Point(25, 359);
-            this.panel_AD_3.Name = "panel_AD_3";
-            this.panel_AD_3.Size = new System.Drawing.Size(499, 172);
-            this.panel_AD_3.TabIndex = 16;
-            // 
-            // panel_Display_Info
-            // 
-            this.panel_Display_Info.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel_Display_Info.Location = new System.Drawing.Point(744, 122);
-            this.panel_Display_Info.Name = "panel_Display_Info";
-            this.panel_Display_Info.Size = new System.Drawing.Size(590, 604);
-            this.panel_Display_Info.TabIndex = 17;
-            // 
-            // panel_Home
-            // 
-            this.panel_Home.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel_Home.Controls.Add(this.pictureBox_Back);
-            this.panel_Home.Controls.Add(this.pictureBox_exit);
-            this.panel_Home.Location = new System.Drawing.Point(0, 0);
-            this.panel_Home.Name = "panel_Home";
-            this.panel_Home.Size = new System.Drawing.Size(1425, 74);
-            this.panel_Home.TabIndex = 18;
-            // 
-            // pictureBox_Back
-            // 
-            this.pictureBox_Back.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Back.Image")));
-            this.pictureBox_Back.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox_Back.Name = "pictureBox_Back";
-            this.pictureBox_Back.Size = new System.Drawing.Size(72, 74);
-            this.pictureBox_Back.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_Back.TabIndex = 14;
-            this.pictureBox_Back.TabStop = false;
-            this.pictureBox_Back.Click += new System.EventHandler(this.pictureBox_Back_Click);
-            // 
-            // label_Software
-            // 
-            this.label_Software.AutoSize = true;
-            this.label_Software.Location = new System.Drawing.Point(151, 41);
-            this.label_Software.Name = "label_Software";
-            this.label_Software.Size = new System.Drawing.Size(128, 17);
-            this.label_Software.TabIndex = 1;
-            this.label_Software.Text = "Computer Software";
-            // 
-            // label_C2
-            // 
-            this.label_C2.AutoSize = true;
-            this.label_C2.Location = new System.Drawing.Point(151, 86);
-            this.label_C2.Name = "label_C2";
-            this.label_C2.Size = new System.Drawing.Size(275, 17);
-            this.label_C2.TabIndex = 2;
-            this.label_C2.Text = "Eopy Endustriyel Otomasyon Proje Yazılım";
-            // 
-            // label_L2
-            // 
-            this.label_L2.AutoSize = true;
-            this.label_L2.Location = new System.Drawing.Point(151, 125);
-            this.label_L2.Name = "label_L2";
-            this.label_L2.Size = new System.Drawing.Size(57, 17);
-            this.label_L2.TabIndex = 3;
-            this.label_L2.Text = "İstanbul";
-            // 
-            // label_L3
-            // 
-            this.label_L3.AutoSize = true;
-            this.label_L3.Location = new System.Drawing.Point(151, 120);
-            this.label_L3.Name = "label_L3";
-            this.label_L3.Size = new System.Drawing.Size(55, 17);
-            this.label_L3.TabIndex = 7;
-            this.label_L3.Text = "Antalya";
-            // 
-            // label_C3
-            // 
-            this.label_C3.AutoSize = true;
-            this.label_C3.Location = new System.Drawing.Point(151, 81);
-            this.label_C3.Name = "label_C3";
-            this.label_C3.Size = new System.Drawing.Size(76, 17);
-            this.label_C3.TabIndex = 6;
-            this.label_C3.Text = "NT Games";
-            // 
-            // label_Hardware
-            // 
-            this.label_Hardware.AutoSize = true;
-            this.label_Hardware.Location = new System.Drawing.Point(151, 36);
-            this.label_Hardware.Name = "label_Hardware";
-            this.label_Hardware.Size = new System.Drawing.Size(134, 17);
-            this.label_Hardware.TabIndex = 5;
-            this.label_Hardware.Text = "Computer Hardware";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(15, 36);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(101, 101);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel4.Location = new System.Drawing.Point(1288, 925);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(441, 172);
-            this.panel4.TabIndex = 17;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel9.Location = new System.Drawing.Point(34, 834);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(441, 172);
-            this.panel9.TabIndex = 17;
-            // 
-            // panel_AD_5
-            // 
-            this.panel_AD_5.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel_AD_5.Controls.Add(this.label_L5);
-            this.panel_AD_5.Controls.Add(this.label_C5);
-            this.panel_AD_5.Controls.Add(this.label_Security);
-            this.panel_AD_5.Controls.Add(this.pictureBox5);
-            this.panel_AD_5.Location = new System.Drawing.Point(25, 715);
-            this.panel_AD_5.Name = "panel_AD_5";
-            this.panel_AD_5.Size = new System.Drawing.Size(499, 172);
-            this.panel_AD_5.TabIndex = 17;
+            this.panel_AD_1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.panel_AD_1_MouseClick);
             // 
             // label_L1
             // 
@@ -319,6 +203,69 @@ namespace JobAssistant
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
             // 
+            // panel_AD_3
+            // 
+            this.panel_AD_3.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel_AD_3.Controls.Add(this.label_L3);
+            this.panel_AD_3.Controls.Add(this.label_C3);
+            this.panel_AD_3.Controls.Add(this.label_Hardware);
+            this.panel_AD_3.Controls.Add(this.pictureBox2);
+            this.panel_AD_3.Location = new System.Drawing.Point(25, 359);
+            this.panel_AD_3.Name = "panel_AD_3";
+            this.panel_AD_3.Size = new System.Drawing.Size(499, 172);
+            this.panel_AD_3.TabIndex = 16;
+            this.panel_AD_3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.panel_AD_3_MouseClick);
+            // 
+            // label_L3
+            // 
+            this.label_L3.AutoSize = true;
+            this.label_L3.Location = new System.Drawing.Point(151, 120);
+            this.label_L3.Name = "label_L3";
+            this.label_L3.Size = new System.Drawing.Size(55, 17);
+            this.label_L3.TabIndex = 7;
+            this.label_L3.Text = "Antalya";
+            // 
+            // label_C3
+            // 
+            this.label_C3.AutoSize = true;
+            this.label_C3.Location = new System.Drawing.Point(151, 81);
+            this.label_C3.Name = "label_C3";
+            this.label_C3.Size = new System.Drawing.Size(76, 17);
+            this.label_C3.TabIndex = 6;
+            this.label_C3.Text = "NT Games";
+            // 
+            // label_Hardware
+            // 
+            this.label_Hardware.AutoSize = true;
+            this.label_Hardware.Location = new System.Drawing.Point(151, 36);
+            this.label_Hardware.Name = "label_Hardware";
+            this.label_Hardware.Size = new System.Drawing.Size(134, 17);
+            this.label_Hardware.TabIndex = 5;
+            this.label_Hardware.Text = "Computer Hardware";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(15, 36);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(101, 101);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
+            // panel_AD_4
+            // 
+            this.panel_AD_4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel_AD_4.Controls.Add(this.label_L4);
+            this.panel_AD_4.Controls.Add(this.label_C4);
+            this.panel_AD_4.Controls.Add(this.label_WebDevelopment);
+            this.panel_AD_4.Controls.Add(this.pictureBox4);
+            this.panel_AD_4.Location = new System.Drawing.Point(25, 537);
+            this.panel_AD_4.Name = "panel_AD_4";
+            this.panel_AD_4.Size = new System.Drawing.Size(499, 172);
+            this.panel_AD_4.TabIndex = 16;
+            this.panel_AD_4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.panel_AD_4_MouseClick);
+            // 
             // label_L4
             // 
             this.label_L4.AutoSize = true;
@@ -333,18 +280,18 @@ namespace JobAssistant
             this.label_C4.AutoSize = true;
             this.label_C4.Location = new System.Drawing.Point(151, 81);
             this.label_C4.Name = "label_C4";
-            this.label_C4.Size = new System.Drawing.Size(264, 17);
+            this.label_C4.Size = new System.Drawing.Size(74, 17);
             this.label_C4.TabIndex = 6;
-            this.label_C4.Text = "Özay Trans Lojistk.Kargo.San.Tic.Ltd.Şti";
+            this.label_C4.Text = "DataTeam";
             // 
             // label_WebDevelopment
             // 
             this.label_WebDevelopment.AutoSize = true;
             this.label_WebDevelopment.Location = new System.Drawing.Point(151, 36);
             this.label_WebDevelopment.Name = "label_WebDevelopment";
-            this.label_WebDevelopment.Size = new System.Drawing.Size(124, 17);
+            this.label_WebDevelopment.Size = new System.Drawing.Size(128, 17);
             this.label_WebDevelopment.TabIndex = 5;
-            this.label_WebDevelopment.Text = "Web Development";
+            this.label_WebDevelopment.Text = "Computer Software";
             // 
             // pictureBox4
             // 
@@ -356,23 +303,36 @@ namespace JobAssistant
             this.pictureBox4.TabIndex = 4;
             this.pictureBox4.TabStop = false;
             // 
+            // panel_AD_5
+            // 
+            this.panel_AD_5.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel_AD_5.Controls.Add(this.label_L5);
+            this.panel_AD_5.Controls.Add(this.label_C5);
+            this.panel_AD_5.Controls.Add(this.label_Security);
+            this.panel_AD_5.Controls.Add(this.pictureBox5);
+            this.panel_AD_5.Location = new System.Drawing.Point(25, 715);
+            this.panel_AD_5.Name = "panel_AD_5";
+            this.panel_AD_5.Size = new System.Drawing.Size(499, 172);
+            this.panel_AD_5.TabIndex = 17;
+            this.panel_AD_5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.panel_AD_5_MouseClick);
+            // 
             // label_L5
             // 
             this.label_L5.AutoSize = true;
             this.label_L5.Location = new System.Drawing.Point(151, 120);
             this.label_L5.Name = "label_L5";
-            this.label_L5.Size = new System.Drawing.Size(32, 17);
+            this.label_L5.Size = new System.Drawing.Size(57, 17);
             this.label_L5.TabIndex = 7;
-            this.label_L5.Text = "Siirt";
+            this.label_L5.Text = "İstanbul";
             // 
             // label_C5
             // 
             this.label_C5.AutoSize = true;
             this.label_C5.Location = new System.Drawing.Point(151, 79);
             this.label_C5.Name = "label_C5";
-            this.label_C5.Size = new System.Drawing.Size(265, 17);
+            this.label_C5.Size = new System.Drawing.Size(274, 17);
             this.label_C5.TabIndex = 6;
-            this.label_C5.Text = "Argets Bina Otomasyon Yazılım LTD.ŞTİ.";
+            this.label_C5.Text = "Argets Built Automation Software LTD.ŞTİ.";
             // 
             // label_Security
             // 
@@ -393,6 +353,52 @@ namespace JobAssistant
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
             // 
+            // panel_Display_Info
+            // 
+            this.panel_Display_Info.AutoScroll = true;
+            this.panel_Display_Info.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel_Display_Info.Location = new System.Drawing.Point(744, 122);
+            this.panel_Display_Info.Name = "panel_Display_Info";
+            this.panel_Display_Info.Size = new System.Drawing.Size(590, 604);
+            this.panel_Display_Info.TabIndex = 17;
+            // 
+            // panel_Home
+            // 
+            this.panel_Home.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel_Home.Controls.Add(this.pictureBox_Back);
+            this.panel_Home.Controls.Add(this.pictureBox_exit);
+            this.panel_Home.Location = new System.Drawing.Point(0, 0);
+            this.panel_Home.Name = "panel_Home";
+            this.panel_Home.Size = new System.Drawing.Size(1425, 74);
+            this.panel_Home.TabIndex = 18;
+            // 
+            // pictureBox_Back
+            // 
+            this.pictureBox_Back.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Back.Image")));
+            this.pictureBox_Back.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox_Back.Name = "pictureBox_Back";
+            this.pictureBox_Back.Size = new System.Drawing.Size(72, 74);
+            this.pictureBox_Back.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_Back.TabIndex = 14;
+            this.pictureBox_Back.TabStop = false;
+            this.pictureBox_Back.Click += new System.EventHandler(this.pictureBox_Back_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel4.Location = new System.Drawing.Point(1288, 925);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(441, 172);
+            this.panel4.TabIndex = 17;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel9.Location = new System.Drawing.Point(34, 834);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(441, 172);
+            this.panel9.TabIndex = 17;
+            // 
             // ApplyForAJob
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -408,6 +414,7 @@ namespace JobAssistant
             this.Name = "ApplyForAJob";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ApplyForAJob";
+            this.Load += new System.EventHandler(this.ApplyForAJob_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_exit)).EndInit();
             this.panel_AD_2.ResumeLayout(false);
             this.panel_AD_2.PerformLayout();
@@ -415,18 +422,18 @@ namespace JobAssistant
             this.panel_Display_Jobs.ResumeLayout(false);
             this.panel_AD_1.ResumeLayout(false);
             this.panel_AD_1.PerformLayout();
-            this.panel_AD_4.ResumeLayout(false);
-            this.panel_AD_4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel_AD_3.ResumeLayout(false);
             this.panel_AD_3.PerformLayout();
-            this.panel_Home.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Back)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel_AD_4.ResumeLayout(false);
+            this.panel_AD_4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel_AD_5.ResumeLayout(false);
             this.panel_AD_5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.panel_Home.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Back)).EndInit();
             this.ResumeLayout(false);
 
         }

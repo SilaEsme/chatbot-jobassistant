@@ -30,8 +30,6 @@ namespace JobAssistant
             x_employee.Add(username,x_cv);
             root.Add(x_employee);
             xdoc.Save(path);
-
-            
         }
     }
 }
