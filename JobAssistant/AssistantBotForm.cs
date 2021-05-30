@@ -6,21 +6,25 @@ namespace JobAssistant
 {
     public partial class AssistantBotForm : Form
     {
-        XmlOperations xml = new XmlOperations();
-        static ChatBot MyBot;
-        string english, position, school;
+        private XmlOperations xml = new XmlOperations();
+        private static ChatBot MyBot;
+        private string english, position, school;
+
         // Old bubble for save old location.
-        UserControlBubble oldSpeechBaloon = new UserControlBubble();
+        private UserControlBubble oldSpeechBaloon = new UserControlBubble();
+
         public AssistantBotForm()
         {
             InitializeComponent();
         }
+
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             e.Cancel = false;
             base.OnFormClosing(e);
             Application.Exit();
         }
+
         private void AssistantBotForm_Load(object sender, EventArgs e)
         {
             // Create new Chatbot
@@ -31,11 +35,12 @@ namespace JobAssistant
 
             userControlBubble1.Visible = false;
         }
+
         private void TakeEmployeeInfo(string input)
         {
             string info = input.ToLower();
             // school
-            if (info == "odtu" || info == "boun" || info == "esogu")
+            if (info == "odtu" || info == "boun" || info == "esogu" || info == "itu" || info == "ytu" || info == "estu" || info == "ıtu")
             {
                 school = info;
             }
@@ -50,6 +55,7 @@ namespace JobAssistant
                 position = info;
             }
         }
+
         private void ShowOutput()
         {
             // To avoid empty input
@@ -59,12 +65,17 @@ namespace JobAssistant
                 CreateHumanBubble(input);
 
                 TakeEmployeeInfo(input);
-                
+
                 // Take Bot's output
                 string output = MyBot.getOutput(input);
                 if (output == "Thanks for using JobAssistant!")
                 {
-                    xml.GenerateBaseEmployeeXML(LoginedUser.Instance().Employee,school,english,position);
+                    xml.GenerateBaseEmployeeXML(LoginedUser.Instance().Employee, school, english, position);
+                    xml.FilterJobs();
+                    CreateRobotBubble(output);
+                    this.Hide();
+                    ApplyForAJob formApply = ApplyForAJob.Instance();
+                    formApply.Show();
                 }
 
                 CreateRobotBubble(output);
@@ -72,6 +83,7 @@ namespace JobAssistant
             // Reset textbox
             textBoxText.Text = "";
         }
+
         private void CreateHumanBubble(string message)
         {
             UserControlBubble speechBaloon = new UserControlBubble(message);
@@ -79,11 +91,12 @@ namespace JobAssistant
             speechBaloon.Left += 155;
             speechBaloon.Size = userControlBubble1.Size;
             speechBaloon.Top = oldSpeechBaloon.Bottom + 10;
-            
+
             panelDialog.Controls.Add(speechBaloon);
 
             oldSpeechBaloon = speechBaloon;
         }
+
         private void CreateRobotBubble(string message)
         {
             UserControlBubble speechBaloon = new UserControlBubble(message);

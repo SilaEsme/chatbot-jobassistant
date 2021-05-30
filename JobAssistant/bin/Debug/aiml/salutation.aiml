@@ -5,7 +5,7 @@
    <pattern>*</pattern>
    <template>
       <random>
-         <li>I'm sorry I don't understand</li>
+         <li>I'm sorry I don't understand.</li>
          <li>I beg your pardon?</li>
          <li>Could you explain that in different words?</li>
          <li>Huh?</li>

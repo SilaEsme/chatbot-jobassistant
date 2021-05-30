@@ -106,11 +106,17 @@
       <DependentUpon>SignUpForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Employee.cs" />
-    <Compile Include="UC_JobItem.cs">
+    <Compile Include="UC_Job.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_JobItem.Designer.cs">
-      <DependentUpon>UC_JobItem.cs</DependentUpon>
+    <Compile Include="UC_Job.Designer.cs">
+      <DependentUpon>UC_Job.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_JobInformation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_JobInformation.Designer.cs">
+      <DependentUpon>UC_JobInformation.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControlBubble.cs">
       <SubType>UserControl</SubType>
@@ -145,8 +151,11 @@
     <EmbeddedResource Include="SignUpForm.resx">
       <DependentUpon>SignUpForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_JobItem.resx">
-      <DependentUpon>UC_JobItem.cs</DependentUpon>
+    <EmbeddedResource Include="UC_Job.resx">
+      <DependentUpon>UC_Job.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_JobInformation.resx">
+      <DependentUpon>UC_JobInformation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlBubble.resx">
       <DependentUpon>UserControlBubble.cs</DependentUpon>

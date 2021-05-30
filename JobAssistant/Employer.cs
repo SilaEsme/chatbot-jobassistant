@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace JobAssistant
+﻿namespace JobAssistant
 {
     public class Employer
     {
@@ -12,5 +6,4 @@ namespace JobAssistant
         private string password;
         private string username;
     }
-
 }

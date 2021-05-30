@@ -1,19 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
+﻿using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace JobAssistant
 {
     public class HashCriptology
     {
-       public StringBuilder sb = new StringBuilder();
+        public StringBuilder sb = new StringBuilder();
 
         public void MD5Sifrele(ref string sifrelenecekMetin)
         {
-
             // MD5CryptoServiceProvider sınıfının bir örneğini oluşturduk.
             MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider();
             //Parametre olarak gelen veriyi byte dizisine dönüştürdük.
@@ -29,11 +24,10 @@ namespace JobAssistant
             }
             sifrelenecekMetin = sb.ToString();
         }
+
         public string getPass()
         {
-
             return sb.ToString();
         }
-
     }
 }

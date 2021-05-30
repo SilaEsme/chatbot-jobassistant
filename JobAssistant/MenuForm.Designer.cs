@@ -32,7 +32,7 @@ namespace JobAssistant
             this.lbl_title = new System.Windows.Forms.Label();
             this.lbl_bot = new System.Windows.Forms.Label();
             this.lbl_findjob = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_hireEmployee = new System.Windows.Forms.Label();
             this.pictureBox_advertise = new System.Windows.Forms.PictureBox();
             this.pictureBox_job = new System.Windows.Forms.PictureBox();
             this.pictureBox_bot = new System.Windows.Forms.PictureBox();
@@ -48,21 +48,22 @@ namespace JobAssistant
             this.lbl_title.AutoSize = true;
             this.lbl_title.Font = new System.Drawing.Font("Malgun Gothic", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_title.ForeColor = System.Drawing.Color.CadetBlue;
-            this.lbl_title.Location = new System.Drawing.Point(49, 42);
+            this.lbl_title.Location = new System.Drawing.Point(37, 34);
+            this.lbl_title.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_title.Name = "lbl_title";
-            this.lbl_title.Size = new System.Drawing.Size(280, 59);
+            this.lbl_title.Size = new System.Drawing.Size(226, 47);
             this.lbl_title.TabIndex = 0;
             this.lbl_title.Text = "Job Assistant";
-            this.lbl_title.Click += new System.EventHandler(this.lbl_title_Click);
             // 
             // lbl_bot
             // 
             this.lbl_bot.AutoSize = true;
             this.lbl_bot.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbl_bot.ForeColor = System.Drawing.Color.CadetBlue;
-            this.lbl_bot.Location = new System.Drawing.Point(92, 505);
+            this.lbl_bot.Location = new System.Drawing.Point(69, 410);
+            this.lbl_bot.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_bot.Name = "lbl_bot";
-            this.lbl_bot.Size = new System.Drawing.Size(259, 25);
+            this.lbl_bot.Size = new System.Drawing.Size(213, 18);
             this.lbl_bot.TabIndex = 7;
             this.lbl_bot.Text = "Connect to Job Assistant";
             this.lbl_bot.Click += new System.EventHandler(this.lbl_bot_Click);
@@ -72,30 +73,32 @@ namespace JobAssistant
             this.lbl_findjob.AutoSize = true;
             this.lbl_findjob.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbl_findjob.ForeColor = System.Drawing.Color.CadetBlue;
-            this.lbl_findjob.Location = new System.Drawing.Point(511, 505);
+            this.lbl_findjob.Location = new System.Drawing.Point(383, 410);
+            this.lbl_findjob.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_findjob.Name = "lbl_findjob";
-            this.lbl_findjob.Size = new System.Drawing.Size(162, 25);
+            this.lbl_findjob.Size = new System.Drawing.Size(130, 18);
             this.lbl_findjob.TabIndex = 9;
             this.lbl_findjob.Text = "Apply for a Job";
             // 
-            // label2
+            // lbl_hireEmployee
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.ForeColor = System.Drawing.Color.CadetBlue;
-            this.label2.Location = new System.Drawing.Point(868, 505);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(191, 25);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Hire an Employee";
+            this.lbl_hireEmployee.AutoSize = true;
+            this.lbl_hireEmployee.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_hireEmployee.ForeColor = System.Drawing.Color.CadetBlue;
+            this.lbl_hireEmployee.Location = new System.Drawing.Point(651, 410);
+            this.lbl_hireEmployee.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_hireEmployee.Name = "lbl_hireEmployee";
+            this.lbl_hireEmployee.Size = new System.Drawing.Size(152, 18);
+            this.lbl_hireEmployee.TabIndex = 11;
+            this.lbl_hireEmployee.Text = "Hire an Employee";
             // 
             // pictureBox_advertise
             // 
             this.pictureBox_advertise.Image = global::JobAssistant.Properties.Resources._03;
-            this.pictureBox_advertise.Location = new System.Drawing.Point(800, 152);
-            this.pictureBox_advertise.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox_advertise.Location = new System.Drawing.Point(600, 124);
+            this.pictureBox_advertise.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox_advertise.Name = "pictureBox_advertise";
-            this.pictureBox_advertise.Size = new System.Drawing.Size(326, 315);
+            this.pictureBox_advertise.Size = new System.Drawing.Size(244, 256);
             this.pictureBox_advertise.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_advertise.TabIndex = 6;
             this.pictureBox_advertise.TabStop = false;
@@ -103,10 +106,10 @@ namespace JobAssistant
             // pictureBox_job
             // 
             this.pictureBox_job.Image = global::JobAssistant.Properties.Resources.apple_device;
-            this.pictureBox_job.Location = new System.Drawing.Point(429, 152);
-            this.pictureBox_job.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox_job.Location = new System.Drawing.Point(322, 124);
+            this.pictureBox_job.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox_job.Name = "pictureBox_job";
-            this.pictureBox_job.Size = new System.Drawing.Size(326, 315);
+            this.pictureBox_job.Size = new System.Drawing.Size(244, 256);
             this.pictureBox_job.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_job.TabIndex = 5;
             this.pictureBox_job.TabStop = false;
@@ -115,10 +118,10 @@ namespace JobAssistant
             // pictureBox_bot
             // 
             this.pictureBox_bot.Image = global::JobAssistant.Properties.Resources.bot;
-            this.pictureBox_bot.Location = new System.Drawing.Point(58, 152);
-            this.pictureBox_bot.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox_bot.Location = new System.Drawing.Point(44, 124);
+            this.pictureBox_bot.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox_bot.Name = "pictureBox_bot";
-            this.pictureBox_bot.Size = new System.Drawing.Size(326, 315);
+            this.pictureBox_bot.Size = new System.Drawing.Size(244, 256);
             this.pictureBox_bot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_bot.TabIndex = 4;
             this.pictureBox_bot.TabStop = false;
@@ -128,9 +131,10 @@ namespace JobAssistant
             // 
             this.pictureBox_exit.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox_exit.Image = global::JobAssistant.Properties.Resources.icons8_close_window_64;
-            this.pictureBox_exit.Location = new System.Drawing.Point(1118, 12);
+            this.pictureBox_exit.Location = new System.Drawing.Point(838, 10);
+            this.pictureBox_exit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox_exit.Name = "pictureBox_exit";
-            this.pictureBox_exit.Size = new System.Drawing.Size(53, 54);
+            this.pictureBox_exit.Size = new System.Drawing.Size(40, 44);
             this.pictureBox_exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_exit.TabIndex = 12;
             this.pictureBox_exit.TabStop = false;
@@ -138,12 +142,12 @@ namespace JobAssistant
             // 
             // MenuForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1183, 658);
+            this.ClientSize = new System.Drawing.Size(887, 535);
             this.Controls.Add(this.pictureBox_exit);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbl_hireEmployee);
             this.Controls.Add(this.lbl_findjob);
             this.Controls.Add(this.lbl_bot);
             this.Controls.Add(this.pictureBox_advertise);
@@ -151,7 +155,7 @@ namespace JobAssistant
             this.Controls.Add(this.pictureBox_bot);
             this.Controls.Add(this.lbl_title);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MenuForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Job Assistant";
@@ -173,7 +177,7 @@ namespace JobAssistant
         private System.Windows.Forms.PictureBox pictureBox_advertise;
         private System.Windows.Forms.Label lbl_bot;
         private System.Windows.Forms.Label lbl_findjob;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl_hireEmployee;
         private System.Windows.Forms.PictureBox pictureBox_exit;
     }
 }

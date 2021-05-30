@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace JobAssistant
 {
@@ -11,7 +7,9 @@ namespace JobAssistant
         private static EmployeeList _EmployeeList;
         private static List<Employee> list = new List<Employee>();
 
-        protected EmployeeList() { }
+        protected EmployeeList()
+        {
+        }
 
         public static EmployeeList CreateSingle()
         {
@@ -24,17 +22,19 @@ namespace JobAssistant
         {
             list.Add(user);
         }
+
         public void DeleteFromEmployeeList(Employee employee)
         {
             list.Remove(employee);
         }
+
         public List<Employee> GetList()
         {
             return list;
         }
+
         public Employee GetEmployee(string username)
         {
-
             foreach (var item in list)
             {
                 if (item.username == username)
@@ -44,12 +44,11 @@ namespace JobAssistant
             }
             return new Employee();
         }
+
         public bool isValid(Employee employee)
         {
-
             foreach (var item in list)
             {
-
                 if (employee.password == item.password && employee.username == item.username)
                 {
                     return true;

@@ -1,10 +1,11 @@
-﻿using System;
-using AIMLbot;
+﻿using AIMLbot;
+using System;
+
 namespace JobAssistant
 {
     public class ChatBot
     {
-        const string UserID = "1";
+        private const string UserID = "1";
         private Bot AimlBot;
         private User myUser;
 
@@ -14,14 +15,15 @@ namespace JobAssistant
             myUser = new User(UserID, AimlBot);
             Initialize();
         }
+
         public void Initialize()
         {
-
             AimlBot.loadSettings();
             AimlBot.isAcceptingUserInput = false;
             AimlBot.loadAIMLFromFiles();
             AimlBot.isAcceptingUserInput = true;
         }
+
         public String getOutput(String input)
         {
             Request request = new Request(input, myUser, AimlBot);

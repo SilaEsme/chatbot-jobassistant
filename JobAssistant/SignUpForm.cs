@@ -1,21 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml;
 
 namespace JobAssistant
 {
     public partial class SignUpForm : Form
     {
-        EmployeeList employeeList = EmployeeList.CreateSingle();
-        Employee employee = new Employee();
-       
+        private EmployeeList employeeList = EmployeeList.CreateSingle();
+        private Employee employee = new Employee();
+
         public SignUpForm()
         {
             InitializeComponent();
@@ -61,9 +54,8 @@ namespace JobAssistant
 
             this.txtePosta.Enter += new System.EventHandler(this.txtePosta_Enter);
             this.txtePosta.Leave += new System.EventHandler(this.txtePosta_Leave);
-
         }
-       
+
         private void txtUsername_Enter(object sender, EventArgs e)
         {
             if (txtUsername.Text == "Enter Your Username")
@@ -72,6 +64,7 @@ namespace JobAssistant
                 txtUsername.ForeColor = SystemColors.WindowText;
             }
         }
+
         private void txtUsername_Leave(object sender, EventArgs e)
         {
             if (txtUsername.Text.Length == 0)
@@ -80,6 +73,7 @@ namespace JobAssistant
                 txtUsername.ForeColor = SystemColors.GrayText;
             }
         }
+
         private void txtPassword_Enter(object sender, EventArgs e)
         {
             if (txtPassword.Text == "Enter Your Password")
@@ -89,6 +83,7 @@ namespace JobAssistant
                 txtPassword.PasswordChar = '*';
             }
         }
+
         private void txtPassword_Leave(object sender, EventArgs e)
         {
             if (txtPassword.Text.Length == 0)
@@ -97,6 +92,7 @@ namespace JobAssistant
                 txtPassword.ForeColor = SystemColors.GrayText;
             }
         }
+
         private void txtConfirmPassword_Enter(object sender, EventArgs e)
         {
             if (txtConfirmPassword.Text == "Confirm Your Password")
@@ -106,6 +102,7 @@ namespace JobAssistant
                 txtConfirmPassword.PasswordChar = '*';
             }
         }
+
         private void txtConfirmPassword_Leave(object sender, EventArgs e)
         {
             if (txtConfirmPassword.Text.Length == 0)
@@ -114,15 +111,16 @@ namespace JobAssistant
                 txtConfirmPassword.ForeColor = SystemColors.GrayText;
             }
         }
+
         private void txtAdSoyad_Enter(object sender, EventArgs e)
         {
-
             if (txtAdSoyad.Text == "Enter Your Name and Surname")
             {
                 txtAdSoyad.Text = "";
                 txtAdSoyad.ForeColor = SystemColors.WindowText;
             }
         }
+
         private void txtAdSoyad_Leave(object sender, EventArgs e)
         {
             if (txtAdSoyad.Text.Length == 0)
@@ -131,15 +129,16 @@ namespace JobAssistant
                 txtAdSoyad.ForeColor = SystemColors.GrayText;
             }
         }
+
         private void txtDogumYeri_Enter(object sender, EventArgs e)
         {
-
             if (txtDogumYeri.Text == "Where do you live?")
             {
                 txtDogumYeri.Text = "";
                 txtDogumYeri.ForeColor = SystemColors.WindowText;
             }
         }
+
         private void txtDogumYeri_Leave(object sender, EventArgs e)
         {
             if (txtDogumYeri.Text.Length == 0)
@@ -147,11 +146,13 @@ namespace JobAssistant
                 txtDogumYeri.Text = "Where do you live?";
                 txtDogumYeri.ForeColor = SystemColors.GrayText;
             }
-        }     
+        }
+
         private void pictureBox_exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+
         private void txtTelefon_Enter(object sender, EventArgs e)
         {
             if (txtTelefon.Text == "Enter Your Phone Number")
@@ -160,6 +161,7 @@ namespace JobAssistant
                 txtTelefon.ForeColor = SystemColors.WindowText;
             }
         }
+
         private void txtTelefon_Leave(object sender, EventArgs e)
         {
             if (txtTelefon.Text.Length == 0)
@@ -168,15 +170,16 @@ namespace JobAssistant
                 txtTelefon.ForeColor = SystemColors.GrayText;
             }
         }
+
         private void txtAdres_Enter(object sender, EventArgs e)
         {
-
             if (txtAdres.Text == "Enter Your Address")
             {
                 txtAdres.Text = "";
                 txtAdres.ForeColor = SystemColors.WindowText;
             }
         }
+
         private void txtAdres_Leave(object sender, EventArgs e)
         {
             if (txtAdres.Text.Length == 0)
@@ -185,6 +188,7 @@ namespace JobAssistant
                 txtAdres.ForeColor = SystemColors.GrayText;
             }
         }
+
         private void txtePosta_Enter(object sender, EventArgs e)
         {
             if (txtePosta.Text == "Enter Your Mail Address")
@@ -192,8 +196,8 @@ namespace JobAssistant
                 txtePosta.Text = "";
                 txtePosta.ForeColor = SystemColors.WindowText;
             }
-
         }
+
         private void txtePosta_Leave(object sender, EventArgs e)
         {
             if (txtePosta.Text.Length == 0)
@@ -203,8 +207,6 @@ namespace JobAssistant
             }
         }
 
-
-
         private void btn_signup_Click(object sender, EventArgs e)
         {
             HashCriptology hashCriptology = new HashCriptology();
@@ -213,15 +215,12 @@ namespace JobAssistant
             string confirm = txtConfirmPassword.Text;
             hashCriptology.MD5Sifrele(ref confirm);
 
-      
-
-            if(txtPassword.Text == "Enter Your Password" || txtUsername.Text == "Enter Your Username"
+            if (txtPassword.Text == "Enter Your Password" || txtUsername.Text == "Enter Your Username"
              || txtePosta.Text == "Enter Your Mail Address" || txtDogumYeri.Text == "Where do you live?"
-             ||txtTelefon.Text == "Enter Your Phone Number" || txtAdSoyad.Text == "Enter Your Name and Surname"
-             || txtConfirmPassword.Text == "Confirm Your Password" || txtAdres.Text == "Enter Your Address") 
+             || txtTelefon.Text == "Enter Your Phone Number" || txtAdSoyad.Text == "Enter Your Name and Surname"
+             || txtConfirmPassword.Text == "Confirm Your Password" || txtAdres.Text == "Enter Your Address")
             {
                 MessageBox.Show("Please fill all the informations", "Invalid", MessageBoxButtons.OK);
- 
             }
             else
             {
@@ -235,7 +234,6 @@ namespace JobAssistant
                         txtConfirmPassword.Text = "";
                     }
                 }
-
                 else
                 {
                     employee.nameSurname = this.txtAdSoyad.Text;
@@ -249,13 +247,11 @@ namespace JobAssistant
 
                     employeeList.AddToEmployeeList(employee);
 
-
                     LogInForm logInForm = new LogInForm();
                     logInForm.Show();
                     this.Hide();
                 }
             }
-
         }
 
         protected override void OnFormClosing(FormClosingEventArgs e)
@@ -264,6 +260,5 @@ namespace JobAssistant
             base.OnFormClosing(e);
             Application.Exit();
         }
-
     }
 }
